@@ -1,4 +1,6 @@
-package io.spring.part03;
+package io.spring.part03.repository;
+
+import io.spring.part03.model.Customer;
 
 public interface CustomerRepository {
 

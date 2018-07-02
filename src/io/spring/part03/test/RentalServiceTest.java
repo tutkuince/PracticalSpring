@@ -1,10 +1,19 @@
-package io.spring.part03;
+package io.spring.part03.test;
 
 import static org.junit.Assert.assertTrue;
 import java.time.LocalDate;
 import java.time.Month;
 
 import org.junit.jupiter.api.Test;
+
+import io.spring.part03.model.Car;
+import io.spring.part03.model.Rental;
+import io.spring.part03.repository.CustomerRepository;
+import io.spring.part03.repository.CustomerRepositoryImpl;
+import io.spring.part03.repository.RentalRepository;
+import io.spring.part03.repository.RentalRepositoryImpl;
+import io.spring.part03.service.RentalService;
+import io.spring.part03.service.RentalServiceImpl;
 
 public class RentalServiceTest {
 	

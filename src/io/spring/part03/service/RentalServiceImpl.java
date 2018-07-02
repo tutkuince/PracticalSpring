@@ -1,8 +1,14 @@
-package io.spring.part03;
+package io.spring.part03.service;
 
 import java.time.LocalDate;
 
 import org.springframework.stereotype.Service;
+
+import io.spring.part03.model.Car;
+import io.spring.part03.model.Customer;
+import io.spring.part03.model.Rental;
+import io.spring.part03.repository.CustomerRepository;
+import io.spring.part03.repository.RentalRepository;
 
 @Service
 public class RentalServiceImpl implements RentalService {

@@ -1,4 +1,4 @@
-package io.spring.part03;
+package io.spring.part03.model;
 
 public class Customer {
 	private String fullName;

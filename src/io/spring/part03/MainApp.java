@@ -4,6 +4,11 @@ import java.time.LocalDate;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import io.spring.part03.config.SpringConfig;
+import io.spring.part03.model.Car;
+import io.spring.part03.model.Rental;
+import io.spring.part03.service.RentalService;
+
 public class MainApp {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
