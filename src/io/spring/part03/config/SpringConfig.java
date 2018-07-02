@@ -25,9 +25,9 @@ public class SpringConfig {
 	public RentalServiceImpl rentalService() {
 		return new RentalServiceImpl(customerRepository, rentalRepository);
 	}
-	
+
 	@Bean
-	public List<Car> carList(){
+	public List<Car> carList() {
 		List<Car> cars = new ArrayList<>();
 		cars.add(new Car("Mercedes", "A180CDI"));
 		cars.add(new Car("BMW", "116D"));
