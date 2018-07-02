@@ -1,10 +1,14 @@
 package io.spring.part03.config;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import io.spring.part03.model.Car;
 import io.spring.part03.repository.CustomerRepositoryImpl;
 import io.spring.part03.repository.RentalRepositoryImpl;
 import io.spring.part03.service.RentalServiceImpl;
@@ -20,5 +24,13 @@ public class SpringConfig {
 	@Bean
 	public RentalServiceImpl rentalService() {
 		return new RentalServiceImpl(customerRepository, rentalRepository);
+	}
+	
+	@Bean
+	public List<Car> carList(){
+		List<Car> cars = new ArrayList<>();
+		cars.add(new Car("Mercedes", "A180CDI"));
+		cars.add(new Car("BMW", "116D"));
+		return cars;
 	}
 }
