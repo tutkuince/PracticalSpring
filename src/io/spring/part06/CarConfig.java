@@ -39,4 +39,12 @@ public class CarConfig {
 		return car;
 	}
 
+	@Bean
+	public Car man() {
+		Car car = car();
+		car.setBrand("MAN");
+		car.setModel("Neoplan");
+		car.setType(CarTypeEnum.BUS);
+		return car;
+	}
 }
